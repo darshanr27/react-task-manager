@@ -26,7 +26,7 @@ export default function TaskItem({title, completed, onDelete, onToggle, onEdit})
                 alignItems: "center",
                 justifyContent: "space-between",
                 padding: "10px 0",
-                borderBottom: "1px solid #add"
+                borderBottom: "1px solid #add",
             }}
         >
             <div style={{display: "flex", alignItems: "center", gap: "10px"}}>
@@ -60,7 +60,7 @@ export default function TaskItem({title, completed, onDelete, onToggle, onEdit})
                 )}
             </div>
             {isEditing ? (
-                <div>
+                <div style={{ display: "flex", gap: "8px" }}>
                     <button onClick={handleSave} disabled={!editedTitle.trim()}
                         style={{
                             ...btnStyle,
@@ -73,7 +73,7 @@ export default function TaskItem({title, completed, onDelete, onToggle, onEdit})
                     <button onClick={handleCancel} style={btnStyle()}>Cancel</button>
                 </div>
             ) : (
-                <div>
+                <div style={{ display: "flex", gap: "8px" }}>
                     <button onClick={()=>setIsEditing(true)} style={btnStyle()} disabled={completed}>Edit</button>
                     <button onClick={onDelete} style={btnStyle()}>Delete</button>
                 </div>
