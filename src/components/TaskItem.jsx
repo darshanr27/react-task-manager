@@ -50,7 +50,7 @@ export default function TaskItem({title, completed, onDelete, onToggle, onEdit})
                     <span
                         style={{
                             textDecoration: completed ? "line-through" : "none",
-                            color: completed ? "grey" : "black",
+                            color: completed ? "#9ca3af" : "var(--task-text)",
                             paddingRight: "30px"
                         }}
                         onDoubleClick={() => setIsEditing(true)}

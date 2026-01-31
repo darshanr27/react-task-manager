@@ -50,14 +50,15 @@ function App() {
     return true;
   })
   
-  const filterBtnStyle = (value) => ({
-    padding: "6px 12px",
-    borderRadius: "6px",
-    border: "1px solid #ccc",
-    backgroundColor: filter === value ? "#d1d5db" : "#f3f4f6",
-    fontWeight: filter === value ? "bold" : "normal",
-    cursor: "pointer",
-  });
+const filterBtnStyle = (value) => ({
+  padding: "6px 12px",
+  borderRadius: "6px",
+  border: filter === value ? "2px solid #646cff" : "1px solid #374151",
+  backgroundColor: filter === value ? "#374151" : "#1f2937",
+  color: "#f9fafb",
+  fontWeight: filter === value ? "bold" : "normal",
+});
+
 
   return (
     <div

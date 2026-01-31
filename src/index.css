@@ -84,3 +84,13 @@ input::placeholder {
   }
 
 }
+
+:root {
+  --task-text: #111827; /* light mode task text */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --task-text: #f9fafb; /* dark mode task text */
+  }
+}
